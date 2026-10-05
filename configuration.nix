@@ -72,7 +72,7 @@
   #   ];
   # };
 
-  # programs.firefox.enable = true;
+ programs.firefox.enable = true;
 
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
@@ -137,7 +137,7 @@
   services.openssh.enable = true;
   
   nix.settings.experimental-features = ["nix-command" "flakes"]; 
-  environment.systemPackages = with pkgs; [ git vim];
+ environment.systemPackages = with pkgs; [ git vim gh ];
   
   services.xserver.enable = true;
   services.displayManager.sddm.enable = true;
